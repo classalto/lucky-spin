@@ -1,0 +1,22 @@
+{
+  "name": "lucky-spin",
+  "version": "1.0.0",
+  "description": "a slot machine game where users can bet digital money",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/classalto/lucky-spin.git"
+  },
+  "author": "Victor Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/classalto/lucky-spin/issues"
+  },
+  "homepage": "https://github.com/classalto/lucky-spin#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
