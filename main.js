@@ -68,6 +68,26 @@ const placeBet = (balance, lines) => {
 };
 
 // 4. Spin the slot machine
+const spin = () => {
+  const symbols = [];
+  for (const [symbol, count] of Object.entries(SYMBOL_COUNTS)) {
+    for (let i = 0; i < count; i++) {
+      symbols.push(symbol);
+    }
+  }
+  const reels = [[], [], []];
+  for (let i = 0; i < COLUMNS; i++) {
+    const reelSymbols = [...symbols];
+    for (let j = 0; j < ROWS; j++) {
+      const randomIndex = Math.floor(Math.random() * reelSymbols.length);
+      const selectedSymbol = reelSymbols[randomIndex];
+      reels[i].push(selectedSymbol);
+      rellSymbols.splice(randomIndex, 1);
+    }
+  }
+};
+
+spin();
 // 5. Check if the user won
 // 6. Adjust money balance
 // 7. Play again
